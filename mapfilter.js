@@ -42,3 +42,25 @@ let lastname = persons.map(people => people.lastname)
 const modifiedNames = persons.map(people => ({ ...people, lastname: "Mr " + people.lastname }));
 const modifiedNamesString = modifiedNames.map(person => ` ${person.lastname}`);
 document.getElementById("para6").innerHTML = modifiedNamesString;
+
+//Question5
+let nums = [2,34,35,22,66,34,3,6];
+let newnums = nums.filter(nums => nums>5);
+document.getElementById("para8").innerHTML = "Orignal Arry "+nums;
+document.getElementById("para7").innerHTML= "Number that are greater then Five "+newnums;
+
+//Question3 from 2nd assignment
+let courses = ['javaScript' , 'CSS', 'HTML' , 'react js' , 'data structures and algorithms'];
+let newcourses = courses.map (newpage);
+
+document.getElementById("para9").innerHTML = newcourses ;
+
+function newpage(n1){
+    return n1;
+}
+
+//Question3(b) check if react js is part of it or not
+let findJs = courses.filter(num1 => courses === 'react js' );
+
+document.getElementById("para10").innerHTML = findJs;
+
